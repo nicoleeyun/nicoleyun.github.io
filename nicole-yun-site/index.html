@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nicole Yun | Violinist (mixed mockup)</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&family=Cormorant+Garamond:wght@500;600;700&family=Italiana&family=Cormorant+Garamond:ital,wght@1,500&family=EB+Garamond:ital@1&family=Playfair+Display:ital@1&family=Lora:ital@1&family=Newsreader:ital@1&family=Gilda+Display&family=Marcellus&family=EB+Garamond&family=Playfair+Display&family=Bodoni+Moda:wght@400;500&family=Pinyon+Script&family=Great+Vibes&family=Allura&family=Alex+Brush&family=DM+Sans:wght@300;400&family=Parisienne&family=Italianno&family=Petit+Formal+Script&family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3ECE1;--panel:#E6D9C8;--taupe:#B1A18A;--sage:#C5BEAC;--blush:#D5BAA5;--mauve:#C1AAA2;--gold:#B8923E;--ink:#3B332B;--mute:#7A6E62;--line:#D9CCBA;--wall:#7f7666;--cream:#F6EFE4;--violet:#9A7A32;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1F1B17;--panel:#2A2520;--taupe:#6E6250;--sage:#4A463C;--blush:#5A463A;--mauve:#52443F;--gold:#D4B063;--violet:#D4B063;--ink:#EFE6D8;--mute:#A89C8C;--line:#3A332B}}
+:root[data-theme="dark"]{--bg:#1F1B17;--panel:#2A2520;--taupe:#6E6250;--sage:#4A463C;--blush:#5A463A;--mauve:#52443F;--gold:#D4B063;--violet:#D4B063;--ink:#EFE6D8;--mute:#A89C8C;--line:#3A332B}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.75 'Jost',system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+.hero{position:relative;min-height:100svh;background:var(--wall);color:var(--cream);overflow:hidden;display:flex;flex-direction:column}
+.hero .pic{position:absolute;right:0;top:0;height:100%;width:auto;max-width:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 28%);mask-image:linear-gradient(90deg,transparent 0,#000 28%)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,32,26,.42),transparent 55%);pointer-events:none}
+.hero nav,.hero .intro{position:relative;z-index:2}
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 40px}
+nav .logo{display:flex;align-items:center;gap:12px;font:italic 400 24px 'Cormorant Garamond',Georgia,serif;text-decoration:none}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-family:'DM Sans',sans-serif;font-weight:300;font-size:11px;line-height:1;letter-spacing:.18em;text-transform:uppercase}
+nav a{text-decoration:none}nav ul a:hover{color:#E7C98A}
+.intro{margin-top:auto;padding:0 40px 9vh}
+h1{font-family:'Italiana','Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(68px,11vw,150px);line-height:.92;margin:0;letter-spacing:.01em}
+.rule{width:64px;height:1px;background:#E7C98A;margin:28px 0 0}
+.intro p{margin:22px 0 0;max-width:30ch;font-size:18px}
+section{padding:96px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+#contact{background:#9A806A;color:var(--cream);border-top:0;box-shadow:0 0 0 100vmax #9A806A;clip-path:inset(0 -100vmax)}
+#contact h2,#contact p,#contact a,#contact label{color:var(--cream)}
+#contact .cform input,#contact .cform select,#contact .cform textarea{color:var(--cream);border-bottom-color:rgba(246,239,228,.45)}
+#contact .cform input:focus,#contact .cform select:focus,#contact .cform textarea:focus{border-bottom-color:var(--cream)}
+#contact .cform option{background:#9A806A;color:var(--cream)}
+#contact .cform label b{color:#E7C98A}
+h2{font-family:'Gilda Display','Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(36px,5vw,58px);line-height:1.1;margin:0 0 32px}
+.two{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}
+.lead{font:italic 300 28px/1.4 'Cormorant Garamond',Georgia,serif;margin:0 0 22px}
+p{margin:0 0 16px;max-width:58ch}
+.ph{aspect-ratio:3/4;display:flex;align-items:flex-end;padding:16px;font-size:14px;color:var(--mute);background-color:var(--blush);background-repeat:no-repeat}
+.ph.w{aspect-ratio:16/10}
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.vids h3{font-family:'Gilda Display','Cormorant Garamond',Georgia,serif;font-weight:400;font-size:22px;line-height:1.25;margin:16px 0 2px}
+.vids span{color:var(--mute);font-size:15px}
+.btn{display:inline-block;margin-top:10px;padding:13px 30px;border-radius:40px;border:1px solid var(--gold);color:var(--ink);text-decoration:none;font-size:15px;font-weight:400}
+.btn:hover{background:var(--gold);color:var(--bg)}
+.ev{display:grid;grid-template-columns:170px 150px 1fr auto;gap:24px;padding:26px 0;border-bottom:1px solid var(--line);align-items:center}
+.ev time{font:italic 300 26px 'Cormorant Garamond',Georgia,serif;color:var(--violet)}
+.ev h3{font-family:'Gilda Display','Cormorant Garamond',Georgia,serif;font-weight:400;font-size:30px;line-height:1.2;margin:0}
+.ev small{color:var(--mute);font-size:15px;display:block}
+.ev em{color:var(--mute);font-size:15px;font-style:normal}
+.fields{display:grid;gap:12px;max-width:520px}
+.fields div{border-bottom:1px solid var(--taupe);padding:10px 0;color:var(--mute);font-size:15px}
+footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--mute);font-size:14px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media (max-width:780px){nav{padding:22px 20px}nav ul{gap:14px;font-size:9px}.intro{padding:0 20px 7vh}
+.hero .pic{width:100%;height:100%;object-fit:cover;object-position:62% 40%;-webkit-mask-image:none;mask-image:none}
+.hero::after{background:linear-gradient(180deg,rgba(38,32,26,.45),transparent 40%,transparent 62%,rgba(38,32,26,.5))}
+.two,.vids{grid-template-columns:1fr;gap:36px}.ev{grid-template-columns:1fr;gap:6px}}
+.arch{border-radius:999px 999px 6px 6px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:780px){.gal{grid-template-columns:1fr}nav ul{flex-wrap:wrap;justify-content:flex-end;gap:2px 14px;max-width:62%}}
+@media (max-width:780px){nav .logo span{display:none}}
+.mark{display:flex}
+@media (max-width:780px){nav .logo svg{width:70px;height:auto}}
+.cform{display:grid;gap:18px;max-width:520px}.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cform label{display:block;font-size:14px;color:var(--mute)}.cform label b{color:var(--gold);font-weight:400}
+.cform input,.cform select,.cform textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--taupe);border-radius:0;padding:8px 0;font:inherit;color:var(--ink);resize:vertical}
+.cform input:focus,.cform select:focus,.cform textarea:focus{outline:0;border-bottom-color:var(--gold)}
+.cform option{background:var(--bg);color:var(--ink)}
+.cform button.btn{background:#f4eadb;color:#5a493c;border:1px solid #f4eadb;cursor:pointer;font-family:inherit}
+.cform .note{margin:14px 0 0;color:var(--mute);font-size:15px}
+@media (max-width:480px){.cform .row{grid-template-columns:1fr}}
+.thumb{width:170px;aspect-ratio:3/2;border-radius:6px;background-color:var(--blush);background-repeat:no-repeat}
+@media (max-width:780px){.thumb{width:100%;max-width:340px}}
+.ig{display:inline-flex;align-items:center;gap:8px;text-decoration:none}.ig:hover span{text-decoration:underline}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+<img class="pic" src="images/hero.jpg" alt="Example portrait: a woman in a champagne chiffon dress walking down stairs against a taupe wall">
+<nav><a class="logo" href="#top" aria-label="Nicole Yun, home"><span class="mark"><svg width="89" height="84" viewBox="0 0 89 84" aria-hidden="true"><circle cx="46" cy="42" r="40.5" fill="none" stroke="currentColor" stroke-width="1"/><text x="42" y="51" text-anchor="middle" font-family="Parisienne,Georgia,serif" font-size="32" fill="currentColor">NY</text></svg></span></a>
+<ul><li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#events">Events</a></li><li><a href="#lessons">Lessons</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#media">Media</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<div class="intro"><h1>Nicole<br>Yun</h1><div class="rule"></div><p>Violinist</p></div>
+</header>
+
+<div class="wrap">
+<section id="about"><div class="two">
+<div class="ph arch" role="img" aria-label="Example photo" style="background-image:url(images/about.jpg);background-size:165% auto;background-position:63% 24%"></div>
+<div>
+<p class="lead">Master's student at Juilliard with Catherine Cho, and founding member of the Karuna Quartet.</p>
+<p>Nicole has soloed with the Diablo Valley Philharmonic and won first prize at the American Protégé International Concerto Competition at Carnegie Hall.</p>
+<p>Karuna Quartet took gold at the 2026 St. Paul String Quartet Competition and made their Alice Tully Hall debut. Her summers go to chamber music, at Aspen, Norfolk, Kent Blossom and Bowdoin.</p>
+</div></div></section>
+<section id="events">
+<h2>Upcoming events</h2>
+<div class="ev"><div class="thumb" role="img" aria-label="Example photo" style="background-image:url(images/event-1.jpg);background-size:200% auto;background-position:58% 20%"></div><time>Oct 18, 2026</time><div><h3>Master's Recital</h3><small>Paul Hall, Juilliard, New York</small></div><em>Brahms, Lutosławski, Franck</em></div>
+<div class="ev"><div class="thumb" role="img" aria-label="Example photo" style="background-image:url(images/event-2.jpg);background-size:220% auto;background-position:40% 62%"></div><time>Nov 8, 2026</time><div><h3>Karuna Quartet</h3><small>The DiMenna Center, New York</small></div><em>American Voices</em></div>
+<div class="ev"><div class="thumb" role="img" aria-label="Example photo" style="background-image:url(images/event-3.jpg);background-size:160% auto;background-position:10% 90%"></div><time>Feb 21, 2027</time><div><h3>Juilliard ChamberFest</h3><small>Alice Tully Hall, New York</small></div><em></em></div>
+</section>
+<section id="lessons"><div class="two">
+<div class="ph" role="img" aria-label="Example photo" style="background-image:url(images/lessons.jpg);background-size:260% auto;background-position:30% 66%"></div>
+<div>
+<h2>Private violin lessons</h2>
+<p class="lead">I believe in thoughtful, individualized instruction that helps each student develop strong technique, musicianship, confidence, and a lasting connection to music.</p>
+<p>Nicole has taught students in New York City and Australia, including students enrolled in Juilliard Pre-College and the Mannes School of Music. She has also served as a Violin Sectional Coach for the Juilliard Pre-College Orchestra. She emphasizes efficient practice strategies, giving her students the tools to practice confidently and independently.</p>
+<a class="btn" href="#contact">Inquire about lessons</a>
+</div></div></section>
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gal"><div class="ph" role="img" aria-label="Example photo" style="background-image:url(images/gallery-1.jpg);background-size:150% auto;background-position:60% 30%"></div><div class="ph" role="img" aria-label="Example photo" style="background-image:url(images/gallery-2.jpg);background-size:100% auto;background-position:50% 50%"></div><div class="ph" role="img" aria-label="Example photo" style="background-image:url(images/gallery-3.jpg);background-size:230% auto;background-position:32% 72%"></div></div></section>
+<section id="media">
+<h2>Media</h2>
+<div class="vids">
+<div><div class="ph w" role="img" aria-label="Example photo" style="background-image:url(images/media-1.jpg);background-size:100% auto;background-position:50% 24%"></div><h3>Franck Piano Quintet in F minor, I</h3><span>Norfolk Chamber Music Festival</span></div>
+<div><div class="ph w" role="img" aria-label="Example photo" style="background-image:url(images/media-2.jpg);background-size:140% auto;background-position:70% 58%"></div><h3>Lutosławski: Subito</h3><span>Violin and piano</span></div>
+<div><div class="ph w" role="img" aria-label="Example photo" style="background-image:url(images/media-3.jpg);background-size:150% auto;background-position:15% 92%"></div><h3>Beethoven Quartet Op. 18 No. 6, I</h3><span>Chamber performance</span></div>
+</div></section>
+<section id="contact"><div class="two">
+<div><h2>Say hello</h2><p>violinnicoleyun@gmail.com</p><p><a class="ig" href="https://www.instagram.com/karunaquartet/" aria-label="Instagram: @karunaquartet"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg><span>@karunaquartet</span></a> &nbsp; <a href="#">YouTube</a> &nbsp; <a href="#">Karuna Quartet</a></p></div>
+<form class="cform" id="cf">
+<div class="row"><div><label for="fn">First name <b>*</b></label><input id="fn" name="first" autocomplete="given-name" required></div>
+<div><label for="ln">Last name <b>*</b></label><input id="ln" name="last" autocomplete="family-name" required></div></div>
+<div><label for="em">Email <b>*</b></label><input id="em" type="email" name="email" autocomplete="email" required></div>
+<div><label for="tp">Inquiries <b>*</b></label><select id="tp" name="topic" required><option value="" selected disabled>Choose one</option><option>Lessons</option><option>Performances</option><option>Collaborations</option><option>Gigs</option><option>Other</option></select></div>
+<div><label for="ms">Message <b>*</b></label><textarea id="ms" name="message" rows="4" required></textarea></div>
+<div><button class="btn" type="submit">Send message</button><p class="note" id="ok" role="status" aria-live="polite"></p></div>
+</form>
+<script>document.getElementById('cf').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').textContent='Thank you! This is a mockup, so nothing was actually sent.';this.reset()})</script>
+</div></section>
+
+<footer><span>© 2026 Nicole Yun</span><span>Design mockup, not a live site</span></footer>
+</div>
+</body>
+</html>
