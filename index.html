@@ -64,8 +64,9 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--mute);fo
 .hero::after{background:linear-gradient(180deg,rgba(38,32,26,.45),transparent 40%,transparent 62%,rgba(38,32,26,.5))}
 .two,.vids{grid-template-columns:1fr;gap:36px}.ev{grid-template-columns:1fr;gap:6px}}
 .arch{border-radius:999px 999px 6px 6px}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gal{display:grid;grid-template-columns:1fr 2.25fr 1fr;gap:20px;align-items:start}
 .gal .ph{aspect-ratio:2/3}
+.gal .ph:nth-child(2){aspect-ratio:3/2}
 @media (max-width:780px){.gal{grid-template-columns:1fr}nav ul{flex-wrap:wrap;justify-content:flex-end;gap:2px 14px;max-width:62%}}
 @media (max-width:780px){nav .logo span{display:none}}
 .mark{display:flex}
@@ -115,7 +116,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--mute);fo
 </div></div></section>
 <section id="gallery">
 <h2>Gallery</h2>
-<div class="gal"><div class="ph" role="img" aria-label="Nicole Yun looking up, holding her violin and bow" style="background-image:url(images/gallery-1.jpg);background-size:cover;background-position:50% 20%"></div><div class="ph" role="img" aria-label="Close portrait of Nicole Yun smiling" style="background-image:url(images/gallery-2.jpg);background-size:cover;background-position:70% 50%"></div><div class="ph" role="img" aria-label="Nicole Yun looking up in a teal dress with her violin" style="background-image:url(images/gallery-3.jpg);background-size:cover;background-position:50% 20%"></div></div></section>
+<div class="gal"><div class="ph" role="img" aria-label="Nicole Yun looking up, holding her violin and bow" style="background-image:url(images/gallery-1.jpg);background-size:cover;background-position:50% 20%"></div><div class="ph" role="img" aria-label="Close portrait of Nicole Yun smiling" style="background-image:url(images/gallery-2.jpg);background-size:cover;background-position:50% 50%"></div><div class="ph" role="img" aria-label="Nicole Yun looking up in a teal dress with her violin" style="background-image:url(images/gallery-3.jpg);background-size:cover;background-position:50% 20%"></div></div></section>
 <section id="media">
 <h2>Media</h2>
 <div class="vids">
