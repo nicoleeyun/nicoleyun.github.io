@@ -58,7 +58,19 @@ p{margin:0 0 16px;max-width:58ch}
 .ev em{color:var(--mute);font-size:15px;font-style:normal}
 .fields{display:grid;gap:12px;max-width:520px}
 .fields div{border-bottom:1px solid var(--taupe);padding:10px 0;color:var(--mute);font-size:15px}
-footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--mute);font-size:14px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer.site{background:var(--panel);border-top:1px solid var(--line);padding:72px 0 28px;margin-top:0}
+.fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:48px}
+.fbrand .wm{font:400 36px/1.1 'Italiana','Cormorant Garamond',Georgia,serif;letter-spacing:.01em;margin:0 0 18px;color:var(--ink)}
+.fbrand p{max-width:30ch;margin:0;color:var(--mute);font-size:17px}
+.fcol h3{font:400 12px/1 'Jost',system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin:0 0 22px}
+.fcol ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.fcol a{display:inline-flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none;font-size:17px}
+.fcol a:hover{color:var(--violet)}
+.fcol svg{width:20px;height:20px;flex:none}
+.fbar{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--mute);font-size:14px}
+.fbar a{color:var(--mute);text-decoration:none}.fbar a:hover{color:var(--violet)}
+@media (max-width:780px){footer.site{padding:56px 0 24px}.fgrid{grid-template-columns:1fr 1fr;gap:36px}.fbrand{grid-column:1/-1}}
+@media (max-width:480px){.fgrid{grid-template-columns:1fr}}
 @media (max-width:780px){nav{padding:22px 20px}nav ul{gap:14px;font-size:9px}.intro{padding:0 20px 7vh}
 .hero .pic{width:100%;height:100%;object-fit:cover;object-position:62% 40%;-webkit-mask-image:none;mask-image:none}
 .hero::after{background:linear-gradient(180deg,rgba(38,32,26,.45),transparent 40%,transparent 62%,rgba(38,32,26,.5))}
@@ -88,7 +100,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--mute);fo
 <header class="hero" id="top">
 <img class="pic" src="images/hero.jpg" alt="Nicole Yun laughing and holding her violin between concrete columns">
 <nav><a class="logo" href="#top" aria-label="Nicole Yun, home"><span class="mark"><svg width="89" height="84" viewBox="0 0 89 84" aria-hidden="true"><circle cx="46" cy="42" r="40.5" fill="none" stroke="currentColor" stroke-width="1"/><text x="42" y="51" text-anchor="middle" font-family="Parisienne,Georgia,serif" font-size="32" fill="currentColor">NY</text></svg></span></a>
-<ul><li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#events">Events</a></li><li><a href="#lessons">Lessons</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#media">Media</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<ul><li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#events">Events</a></li><li><a href="#lessons">Lessons</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#media">Media</a></li><li><a href="#contact">Contact</a></li></ul></div>
 <div class="intro"><h1>Nicole<br>Yun</h1><div class="rule"></div><p>Violinist</p></div>
 </header>
 
@@ -125,7 +137,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--mute);fo
 <div><div class="ph w" role="img" aria-label="Example photo" style="background-image:url(images/media-3.jpg);background-size:150% auto;background-position:15% 92%"></div><h3>Beethoven Quartet Op. 18 No. 6, I</h3><span>Chamber performance</span></div>
 </div></section>
 <section id="contact"><div class="two">
-<div><h2>Say hello</h2><p>violinnicoleyun@gmail.com</p><p><a class="ig" href="https://www.instagram.com/karunaquartet/" target="_blank" rel="noopener" aria-label="Instagram: @karunaquartet"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a> &nbsp; <a href="https://youtube.com/@nicoleyun" target="_blank" rel="noopener">YouTube</a> &nbsp; <a href="https://www.karunaquartet.com/" target="_blank" rel="noopener">Karuna Quartet</a></p></div>
+<div><h2>Say hello</h2><p><a href="mailto:violinnicoleyun@gmail.com">violinnicoleyun@gmail.com</a></p><p><a class="ig" href="https://www.instagram.com/karunaquartet/" target="_blank" rel="noopener" aria-label="Instagram: @karunaquartet"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a> &nbsp; <a href="https://youtube.com/@nicoleyun" target="_blank" rel="noopener">YouTube</a> &nbsp; <a href="https://www.karunaquartet.com/" target="_blank" rel="noopener">Karuna Quartet</a></p></div>
 <form class="cform" id="cf">
 <div class="row"><div><label for="fn">First name <b>*</b></label><input id="fn" name="first" autocomplete="given-name" required></div>
 <div><label for="ln">Last name <b>*</b></label><input id="ln" name="last" autocomplete="family-name" required></div></div>
@@ -163,7 +175,19 @@ document.getElementById('cf').addEventListener('submit',function(e){
 </script>
 </div></section>
 
-<footer><span>© 2026 Nicole Yun</span><span>Design mockup, not a live site</span></footer>
 </div>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div class="fbrand"><p class="wm">Nicole Yun</p><p>Violinist, chamber musician, and educator based in New York City.</p></div>
+<div class="fcol" role="navigation" aria-label="Explore"><h3>Explore</h3><ul>
+<li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#events">Events</a></li><li><a href="#lessons">Lessons</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#media">Media</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div class="fcol"><h3>Connect</h3><ul>
+<li><a href="https://youtube.com/@nicoleyun" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.3-2.5z"/></svg>YouTube</a></li>
+<li><a href="https://www.instagram.com/karunaquartet/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a></li>
+<li><a href="https://www.karunaquartet.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Karuna Quartet</a></li>
+<li><a href="mailto:violinnicoleyun@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></svg>Email</a></li></ul></div>
+</div>
+<div class="fbar"><span>&copy; 2026 Nicole Yun</span><a href="#top">Back to top &uarr;</a></div>
+</div></footer>
 </body>
 </html>
