@@ -16,10 +16,10 @@ body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.75 'Jost',sy
 a{color:inherit}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
-.hero{position:relative;min-height:100svh;background:var(--wall);color:var(--cream);overflow:hidden;display:flex;flex-direction:column}
-.hero .pic{position:absolute;right:0;top:0;height:100%;width:auto;max-width:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 28%);mask-image:linear-gradient(90deg,transparent 0,#000 28%)}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(104,76,58,.45),transparent 24%),linear-gradient(90deg,rgba(112,82,62,.34),transparent 55%);pointer-events:none}
-.hero .intro{position:relative;z-index:2}
+.hero{position:relative;min-height:100svh;background:var(--bg);color:var(--ink);display:flex;flex-direction:column;align-items:center;padding:96px 3vw 34px}
+.hero .dome{width:min(1040px,100%);aspect-ratio:1170/764;overflow:hidden;border-radius:50% 50% 4px 4px/32% 32% 4px 4px}
+.hero .pic{display:block;width:100%;height:100%;object-fit:cover}
+.hero .role{margin:26px 0 0;font:300 12px/1 'Jost',system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
 nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:calc(28px + env(safe-area-inset-top,0px)) 40px 28px;transition:background .25s,padding .25s,box-shadow .25s}
 nav .logo svg{transition:width .25s}
 nav.scrolled{background:var(--bg);color:var(--ink);padding:calc(12px + env(safe-area-inset-top,0px)) 40px 12px;box-shadow:0 1px 0 var(--line)}
@@ -28,11 +28,8 @@ nav.scrolled ul a:hover{color:var(--violet)}
 nav.scrolled ul a.on{color:var(--violet);text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:1px}
 nav .logo{display:flex;align-items:center;gap:12px;font:italic 400 24px 'Cormorant Garamond',Georgia,serif;text-decoration:none}
 nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-family:'DM Sans',sans-serif;font-weight:300;font-size:11px;line-height:1;letter-spacing:.18em;text-transform:uppercase}
-nav a{text-decoration:none}nav ul a:hover{color:#E7C98A}
-.intro{margin-top:auto;padding:0 40px 9vh}
-h1{font-family:'Italiana','Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(68px,11vw,150px);line-height:.92;margin:0;letter-spacing:.01em}
-.rule{width:64px;height:1px;background:#E7C98A;margin:28px 0 0}
-.intro p{margin:22px 0 0;max-width:30ch;font-size:18px}
+nav a{text-decoration:none}nav ul a:hover{color:var(--violet)}
+h1{font-family:'Italiana','Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(64px,16vw,250px);line-height:.9;margin:0;letter-spacing:.01em;text-align:center;position:relative;z-index:2}
 section{padding:96px 0;border-top:1px solid var(--line)}
 section:first-of-type{border-top:0}
 #contact{background:#9A806A;color:var(--cream);border-top:0;box-shadow:0 0 0 100vmax #9A806A;clip-path:inset(0 -100vmax)}
@@ -95,9 +92,7 @@ footer.site{background:var(--panel);border-top:1px solid var(--line);padding:72p
 .fbar a{color:var(--mute);text-decoration:none}.fbar a:hover{color:var(--violet)}
 @media (max-width:780px){footer.site{padding:56px 0 24px}.fgrid{grid-template-columns:1fr 1fr;gap:36px}.fbrand{grid-column:1/-1}}
 @media (max-width:480px){.fgrid{grid-template-columns:1fr}}
-@media (max-width:780px){html{scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}nav{padding:calc(22px + env(safe-area-inset-top,0px)) 20px 22px}nav.scrolled{padding:calc(10px + env(safe-area-inset-top,0px)) 20px 10px}nav.scrolled .logo svg{width:44px}nav ul{gap:14px;font-size:9px}.intro{padding:0 20px 7vh}
-.hero .pic{width:100%;height:100%;object-fit:cover;object-position:62% 40%;-webkit-mask-image:none;mask-image:none}
-.hero::after{background:linear-gradient(180deg,rgba(104,76,58,.42),transparent 40%,transparent 62%,rgba(90,64,48,.5))}
+@media (max-width:780px){html{scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}nav{padding:calc(22px + env(safe-area-inset-top,0px)) 20px 22px}nav.scrolled{padding:calc(10px + env(safe-area-inset-top,0px)) 20px 10px}nav.scrolled .logo svg{width:44px}nav ul{gap:14px;font-size:9px}.hero{padding:88px 5vw 28px;justify-content:center}
 .two,.vids{grid-template-columns:1fr;gap:36px}.ev{grid-template-columns:1fr;gap:6px}}
 .arch{border-radius:999px 999px 6px 6px}
 #about .arch{position:sticky;top:32px}
@@ -123,10 +118,11 @@ footer.site{background:var(--panel);border-top:1px solid var(--line);padding:72p
 </head>
 <body>
 <header class="hero" id="top">
-<img class="pic" src="images/hero.jpg" alt="Nicole Yun laughing and holding her violin between concrete columns">
 <nav><a class="logo" href="#top" aria-label="Nicole Yun, home"><span class="mark"><svg width="89" height="84" viewBox="0 0 89 84" aria-hidden="true"><circle cx="46" cy="42" r="40.5" fill="none" stroke="currentColor" stroke-width="1"/><text x="42" y="51" text-anchor="middle" font-family="Parisienne,Georgia,serif" font-size="32" fill="currentColor">NY</text></svg></span></a>
 <ul><li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#events">Events</a></li><li><a href="#lessons">Lessons</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#media">Media</a></li><li><a href="#contact">Contact</a></li></ul></nav>
-<div class="intro"><h1>Nicole<br>Yun</h1><div class="rule"></div><p>Violinist</p></div>
+<h1>Nicole Yun</h1>
+<div class="dome"><img class="pic" src="images/hero.jpg" alt="Nicole Yun laughing and holding her violin between concrete columns"></div>
+<p class="role">Violinist</p>
 </header>
 
 <div class="wrap">
