@@ -108,10 +108,22 @@ footer.site{background:var(--panel);border-top:1px solid var(--line);padding:72p
 .arch{border-radius:999px 999px 6px 6px}
 #lessons .ph{outline:1px solid var(--gold);outline-offset:14px}
 @media (min-width:781px){#about .arch{position:sticky;top:32px}}
-.gal{display:grid;grid-template-columns:1fr 2.25fr 1fr;gap:20px;align-items:start}
-.gal .ph{aspect-ratio:2/3}
-.gal .ph:nth-child(2){aspect-ratio:3/2}
-@media (max-width:780px){.gal{grid-template-columns:1fr}nav ul{flex-wrap:wrap;justify-content:flex-end;gap:2px 14px;max-width:62%}}
+.gal{column-count:3;column-gap:12px;max-width:880px;margin:0 auto}
+#gallery h2{max-width:880px;margin-left:auto;margin-right:auto}
+.gal .g{padding:0;border:0;display:block;width:100%;margin:0 0 12px;break-inside:avoid;overflow:hidden;border-radius:4px;background:var(--blush);cursor:zoom-in}
+.gal .g img{width:100%;height:auto;display:block;transition:transform .5s}
+.gal .g:hover img{transform:scale(1.04)}
+body.lb-open{overflow:hidden}
+#lb{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;background:rgba(27,23,19,.95)}
+#lb.open{display:flex}
+#lb img{max-width:92vw;max-height:86vh;object-fit:contain;display:block}
+#lb button{position:absolute;background:none;border:0;color:#F6EFE4;font:300 40px/1 'Jost',system-ui,sans-serif;cursor:pointer;padding:14px 18px}
+#lb button:hover{color:#E7C98A}
+#lb .x{top:8px;right:8px;font-size:36px}
+#lb .p{left:4px;top:50%;transform:translateY(-50%)}
+#lb .n{right:4px;top:50%;transform:translateY(-50%)}
+#lb .c{position:absolute;bottom:14px;left:0;right:0;margin:0;text-align:center;color:#E6D9C8;font-size:13px;letter-spacing:.18em;max-width:none}
+@media (max-width:780px){.gal{column-count:2;column-gap:8px}.gal .g{margin-bottom:8px}nav ul{flex-wrap:wrap;justify-content:flex-end;gap:2px 14px;max-width:62%}}
 @media (max-width:780px){nav .logo span{display:none}}
 .mark{display:flex}
 @media (max-width:780px){nav .logo svg{width:70px;height:auto}}
@@ -167,7 +179,7 @@ footer.site{background:var(--panel);border-top:1px solid var(--line);padding:72p
 </div></div></section>
 <section id="gallery">
 <h2>Gallery</h2>
-<div class="gal"><div class="ph" role="img" aria-label="Nicole Yun looking up, holding her violin and bow" style="background-image:url(images/gallery-1.jpg);background-size:cover;background-position:50% 20%"></div><div class="ph" role="img" aria-label="Close portrait of Nicole Yun smiling" style="background-image:url(images/gallery-2.jpg);background-size:cover;background-position:50% 50%"></div><div class="ph" role="img" aria-label="Nicole Yun looking up in a teal dress with her violin" style="background-image:url(images/gallery-3.jpg);background-size:cover;background-position:50% 20%"></div></div></section>
+<div class="gal"><button type="button" class="g" data-full="images/gallery-1.jpg" aria-label="Open photo 1 larger"><img src="images/gallery-1.jpg" width="1000" height="1500" alt="Nicole Yun in profile, holding her violin and looking up" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-2.jpg" aria-label="Open photo 2 larger"><img src="images/gallery-2.jpg" width="1500" height="1000" alt="Nicole Yun sitting on a stone wall with her violin" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-3.jpg" aria-label="Open photo 3 larger"><img src="images/gallery-3.jpg" width="1000" height="1500" alt="Close portrait of Nicole Yun with her violin" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-4.jpg" aria-label="Open photo 4 larger"><img src="images/gallery-4.jpg" width="1000" height="1500" alt="Nicole Yun standing by a stone wall, holding her violin" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-5.jpg" aria-label="Open photo 5 larger"><img src="images/gallery-5.jpg" width="1000" height="1500" alt="Nicole Yun looking through the curve of her violin" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-6.jpg" aria-label="Open photo 6 larger"><img src="images/gallery-6.jpg" width="1000" height="1500" alt="Nicole Yun with her violin raised, in front of a stone pillar" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-7.jpg" aria-label="Open photo 7 larger"><img src="images/gallery-7.jpg" width="999" height="1500" alt="Nicole Yun glancing back in a stone archway" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-8.jpg" aria-label="Open photo 8 larger"><img src="images/gallery-8.jpg" width="1000" height="1500" alt="Nicole Yun in profile, looking up" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-9.jpg" aria-label="Open photo 9 larger"><img src="images/gallery-9.jpg" width="1500" height="1001" alt="Nicole Yun performing with the quartet" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-10.jpg" aria-label="Open photo 10 larger"><img src="images/gallery-10.jpg" width="1500" height="1000" alt="The Karuna Quartet performing at the Saint Paul String Quartet Competition" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-11.jpg" aria-label="Open photo 11 larger"><img src="images/gallery-11.jpg" width="1500" height="1000" alt="The Karuna Quartet taking a bow at the Saint Paul String Quartet Competition" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-12.jpg" aria-label="Open photo 12 larger"><img src="images/gallery-12.jpg" width="1500" height="1000" alt="The Karuna Quartet receiving first prize at the Saint Paul String Quartet Competition" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-13.jpg" aria-label="Open photo 13 larger"><img src="images/gallery-13.jpg" width="1000" height="1500" alt="The Karuna Quartet posing with their instruments on a stone ledge" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-14.jpg" aria-label="Open photo 14 larger"><img src="images/gallery-14.jpg" width="1500" height="1000" alt="The Karuna Quartet posing with their instruments on stone steps" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-15.jpg" aria-label="Open photo 15 larger"><img src="images/gallery-15.jpg" width="1200" height="1500" alt="Nicole Yun playing violin during a concert" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-16.jpg" aria-label="Open photo 16 larger"><img src="images/gallery-16.jpg" width="1500" height="1125" alt="The Karuna Quartet taking a bow in front of the audience" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-17.jpg" aria-label="Open photo 17 larger"><img src="images/gallery-17.jpg" width="1170" height="764" alt="Nicole Yun laughing, holding her violin, in a teal dress" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-18.jpg" aria-label="Open photo 18 larger"><img src="images/gallery-18.jpg" width="1000" height="1500" alt="Nicole Yun smiling, holding her violin and bow, in a teal dress" loading="lazy"></button><button type="button" class="g" data-full="images/gallery-19.jpg" aria-label="Open photo 19 larger"><img src="images/gallery-19.jpg" width="999" height="1500" alt="Nicole Yun looking up, holding her violin and bow, in a teal dress" loading="lazy"></button></div></section>
 <section id="media">
 <h2>Media</h2>
 <div class="vids">
@@ -244,6 +256,20 @@ document.getElementById('cf').addEventListener('submit',function(e){
   window.addEventListener('scroll',onScroll,{passive:true});
   window.addEventListener('resize',onScroll);
   onScroll();
+})();
+</script>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer"><button type="button" class="x" aria-label="Close">&times;</button><button type="button" class="p" aria-label="Previous photo">&lsaquo;</button><img alt=""><button type="button" class="n" aria-label="Next photo">&rsaquo;</button><p class="c"></p></div>
+<script>
+(function(){var g=[].slice.call(document.querySelectorAll('.gal .g')),lb=document.getElementById('lb'),im=lb.querySelector('img'),c=lb.querySelector('.c'),i=0,last=null;
+function show(k){i=(k+g.length)%g.length;var b=g[i];im.src=b.dataset.full;im.alt=b.querySelector('img').alt;c.textContent=(i+1)+' / '+g.length}
+function open(k){last=document.activeElement;show(k);lb.classList.add('open');document.body.classList.add('lb-open');lb.querySelector('.x').focus()}
+function close(){lb.classList.remove('open');document.body.classList.remove('lb-open');im.removeAttribute('src');if(last)last.focus()}
+g.forEach(function(b,k){b.addEventListener('click',function(){open(k)})});
+lb.querySelector('.x').onclick=close;lb.querySelector('.p').onclick=function(){show(i-1)};lb.querySelector('.n').onclick=function(){show(i+1)};
+lb.addEventListener('click',function(e){if(e.target===lb)close()});
+document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1)});
+var sx=0;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(i+(d<0?1:-1))});
 })();
 </script>
 </body>
